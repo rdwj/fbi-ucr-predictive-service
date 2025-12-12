@@ -1,0 +1,5 @@
+# Code owners for this repository
+# These users/teams will be automatically requested for review on PRs
+
+# Require rdwj approval for all changes
+* @rdwj
