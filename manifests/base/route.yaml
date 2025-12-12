@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: fbi-ucr
+  labels:
+    app.kubernetes.io/name: fbi-ucr
+    app.kubernetes.io/component: inference
+spec:
+  to:
+    kind: Service
+    name: fbi-ucr
+    weight: 100
+  port:
+    targetPort: http
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  wildcardPolicy: None

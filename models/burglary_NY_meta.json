@@ -1,0 +1,16 @@
+{
+  "offense": "burglary",
+  "location": "NY",
+  "model_type": "Prophet",
+  "params": {
+    "yearly_seasonality": true,
+    "changepoint_prior_scale": 0.5,
+    "seasonality_prior_scale": 0.1
+  },
+  "mape": 6.6,
+  "training_start": "2020-01",
+  "training_end": "2024-04",
+  "test_start": "2024-05",
+  "test_end": "2024-10",
+  "exported_at": "2025-12-01T07:24:07.080646"
+}

@@ -1,0 +1,9 @@
+# Gitleaks configuration for fbi-ucr project
+
+[allowlist]
+  description = "Allowlist for false positives and local-only files"
+
+  # Local environment files (gitignored, never committed)
+  paths = [
+    '''\.env$''',
+  ]

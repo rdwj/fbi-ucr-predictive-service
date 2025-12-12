@@ -1,0 +1,16 @@
+{
+  "offense": "property-crime",
+  "location": "FL",
+  "model_type": "Prophet",
+  "params": {
+    "yearly_seasonality": false,
+    "changepoint_prior_scale": 0.5,
+    "seasonality_prior_scale": 0.01
+  },
+  "mape": 25.99,
+  "training_start": "2020-01",
+  "training_end": "2024-04",
+  "test_start": "2024-05",
+  "test_end": "2024-10",
+  "exported_at": "2025-12-01T07:24:05.986503"
+}

@@ -1,0 +1,32 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: fbi-ucr-dev
+
+resources:
+  - ../../base
+
+nameSuffix: ""
+
+commonLabels:
+  environment: dev
+
+patches:
+  - patch: |-
+      - op: replace
+        path: /metadata/name
+        value: fbi-ucr-dev
+    target:
+      kind: Namespace
+  - patch: |-
+      - op: replace
+        path: /spec/replicas
+        value: 1
+    target:
+      kind: Deployment
+      name: fbi-ucr
+
+images:
+  - name: fbi-ucr
+    newName: quay.io/rh-aiservices-bu/fbi-ucr
+    newTag: dev
