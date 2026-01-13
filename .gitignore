@@ -60,3 +60,6 @@ htmlcov/
 .tox/
 
 data/
+
+# Pull secrets
+wjackson-wesjackson-secret.yml
